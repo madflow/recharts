@@ -1,9 +1,9 @@
 import * as React from 'react';
 import omit from 'es-toolkit/compat/omit';
 import { MutableRefObject, PureComponent, ReactElement, ReactNode, useRef } from 'react';
-import { clsx } from 'clsx';
 
 import { Series } from 'victory-vendor/d3-shape';
+import { clsx } from '../util/CssPrefixUtils';
 import {
   defaultRadialBarShape,
   parseCornerRadius,

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { MutableRefObject, ReactElement, ReactNode, SVGProps, useMemo, useRef } from 'react';
 import get from 'es-toolkit/compat/get';
 
-import { clsx } from 'clsx';
+import { clsx } from '../util/CssPrefixUtils';
 import { selectPieLegend, selectPieSectors } from '../state/selectors/pieSelectors';
 import { useAppSelector } from '../state/hooks';
 import { Layer } from '../container/Layer';

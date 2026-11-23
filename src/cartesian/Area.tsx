@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { MutableRefObject, PureComponent, ReactElement, ReactNode, useMemo, useRef } from 'react';
-import { clsx } from 'clsx';
 import { once } from 'es-toolkit';
+import { clsx } from '../util/CssPrefixUtils';
 import { BaseLineType, CurveType, Props as CurveProps } from '../shape/Curve';
 import { Layer } from '../container/Layer';
 import {

@@ -3,7 +3,7 @@ import { FunctionComponent, ReactElement, ReactNode, SVGProps, useEffect, useMem
 import maxBy from 'es-toolkit/compat/maxBy';
 import minBy from 'es-toolkit/compat/minBy';
 
-import { clsx } from 'clsx';
+import { clsx } from '../util/CssPrefixUtils';
 import { Text } from '../component/Text';
 import { PolarLabelContextProvider, PolarLabelFromLabelProp } from '../component/Label';
 import { Layer } from '../container/Layer';

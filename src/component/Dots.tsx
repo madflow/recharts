@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { cloneElement, isValidElement } from 'react';
-import { clsx } from 'clsx';
+import { clsx } from '../util/CssPrefixUtils';
 import { Dot, type Props as DotProps } from '../shape/Dot';
 import { DotSymbol, getDotSymbol } from '../shape/DotSymbol';
 import { Layer } from '../container/Layer';

@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Component, MutableRefObject, ReactElement, ReactNode, RefObject, useCallback, useMemo, useRef } from 'react';
 
-import { clsx } from 'clsx';
 import { once } from 'es-toolkit';
+import { clsx } from '../util/CssPrefixUtils';
 import { CurveType, Props as CurveProps } from '../shape/Curve';
 import { Layer } from '../container/Layer';
 import { LineDrawShape, LineDrawShapeProps } from './LineDrawShape';

@@ -21,3 +21,18 @@ export const warn = (condition: boolean, format: string, ...args: any[]) => {
     }
   }
 };
+
+// Adapted from tiny-invariant v1.3.3 (MIT); see LICENSE.
+// Babel replaces dotted NODE_ENV access with the build format (commonjs or es6).
+// The template key defers that replacement to the consumer's bundler or runtime.
+// eslint-disable-next-line dot-notation -- Retain the computed key until after Babel's define pass.
+const isProduction = process.env[`NODE_ENV`] === 'production';
+const prefix = 'Invariant failed';
+
+export function invariant(condition: unknown, message?: string | (() => string)): asserts condition {
+  if (condition) return;
+  if (isProduction) throw new Error(prefix);
+
+  const detail = typeof message === 'function' ? message() : message;
+  throw new Error(detail ? `${prefix}: ${detail}` : prefix);
+}

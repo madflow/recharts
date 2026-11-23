@@ -2,7 +2,7 @@ import * as React from 'react';
 import { MutableRefObject, ReactElement, ReactNode, useMemo, useRef } from 'react';
 import omit from 'es-toolkit/compat/omit';
 
-import { clsx } from 'clsx';
+import { clsx } from '../util/CssPrefixUtils';
 import { selectActiveTooltipIndex } from '../state/selectors/tooltipSelectors';
 import { useAppSelector } from '../state/hooks';
 import { Layer } from '../container/Layer';

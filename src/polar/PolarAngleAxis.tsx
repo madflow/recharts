@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { FunctionComponent, ReactNode, SVGProps, useEffect, useMemo } from 'react';
-import { clsx } from 'clsx';
+import { clsx } from '../util/CssPrefixUtils';
 import { Layer } from '../container/Layer';
 import { Dot } from '../shape/Dot';
 import { Polygon } from '../shape/Polygon';

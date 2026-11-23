@@ -6,7 +6,7 @@ import { SVGProps, useState, useRef, useCallback, forwardRef, useImperativeHandl
 
 import get from 'es-toolkit/compat/get';
 import isEqual from 'es-toolkit/compat/isEqual';
-import { clsx } from 'clsx';
+import { clsx } from '../util/CssPrefixUtils';
 import { Layer } from '../container/Layer';
 import { Text, Props as TextProps, TextAnchor, TextVerticalAnchor, isValidTextAnchor } from '../component/Text';
 import { CartesianLabelContextProvider, ImplicitLabelType, CartesianLabelFromLabelProp } from '../component/Label';

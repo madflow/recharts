@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { MutableRefObject, ReactElement, ReactNode, SVGProps, useMemo, useRef } from 'react';
 
-import { clsx } from 'clsx';
+import { clsx } from '../util/CssPrefixUtils';
 import { Layer } from '../container/Layer';
 import {
   CartesianLabelListContextProvider,

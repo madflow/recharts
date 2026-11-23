@@ -1,5 +1,5 @@
 import * as React from 'react';
-import invariant from 'tiny-invariant';
+import { invariant } from './LogUtils';
 import { ActiveShape, DataKey, ShapeAnimationProps } from './types';
 import { Rectangle, Props as RectangleProps } from '../shape/Rectangle';
 import { BarShapeProps } from '../cartesian/Bar';

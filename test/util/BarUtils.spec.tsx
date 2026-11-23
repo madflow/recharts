@@ -31,7 +31,12 @@ describe('BarUtils', () => {
 
     test('should throw an invariant when any other datatype is passed as value', () => {
       const spy = vi.fn().mockReturnValue(10);
-      expect(() => minPointSizeCallback(spy, 1)('100', 0)).toThrow();
+      expect(() => minPointSizeCallback(spy, 1)('100', 0)).toThrow(
+        new Error(
+          'Invariant failed: minPointSize callback function received a value with type of string. Currently only numbers or null/undefined are supported.',
+        ),
+      );
+      expect(spy).not.toHaveBeenCalled();
     });
   });
 });
